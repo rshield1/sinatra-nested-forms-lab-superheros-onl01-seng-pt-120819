@@ -23,7 +23,7 @@ class App < Sinatra::Base
       @hero_bio << hero[:bio]
     end
 
-    erb :team
+    erb :'views/team'
   end
 end
 
