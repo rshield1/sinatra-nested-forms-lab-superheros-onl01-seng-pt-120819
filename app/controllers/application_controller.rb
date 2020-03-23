@@ -10,7 +10,9 @@ class App < Sinatra::Base
     
     post '/teams' do
       
-      erb :
+      erb :teams
+      
+    end
 
 
 end
