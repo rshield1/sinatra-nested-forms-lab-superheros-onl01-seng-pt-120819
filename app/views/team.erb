@@ -1,11 +1,13 @@
-<form method="POST" action="/teams">
-  <label for="male">Male</label>
-  <input type="radio" name="gender" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="gender" id="female" value="female"><br>
-  <label for="other">Other</label>
-  <input type="radio" name="gender" id="other" value="other"><br><br>
-  <input type="submit" value="Submit">
-</form>
+  
+<h1><%= @team_name %></h1>
+<h2>Team Motto: <%= @team_motto %></h2>
 
+<% @team_members.each.with_index do |hero, index| %>
+  <h2>Hero Name: <%= @hero_name[index] %></h2>
+  <p>
+    Hero power: <%= @hero_power[index] %>
+    <br>
+    Hero biography: <%= @hero_bio[index] %>
+  </p>
+<% end %>
 
